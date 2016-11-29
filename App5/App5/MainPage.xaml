@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App5"
+             x:Class="App5.MainPage"
+             Title="Home Page">
+  
+         <SearchBar x:Name="search" SearchButtonPressed="OnSearch"/>
+         
+        
+          <ListView x:Name="MainListView" HasUnevenRows="True" ItemSelected="OnMore">
+            <ListView.ItemTemplate>
+              <DataTemplate>
+                <ViewCell>
+                  <StackLayout Orientation="Vertical" Padding ="20">
+                    <Label Text="{Binding Name}" Font="Large"/>
+                </StackLayout>
+              </ViewCell>
+           </DataTemplate>
+       </ListView.ItemTemplate>
+     </ListView>   
+   
+
+</ContentPage>

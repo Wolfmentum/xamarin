@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App5.AddProduct"
+             Title="Add a Product">
+
+            <StackLayout x:Name="stack" Padding ="20">
+              <Label Text="Name"/>
+              <Entry x:Name="Nome"/>
+              <Label Text="Category"/>
+              <Entry x:Name="Categoria"/>
+              <Label Text="Tag"/>
+              <Entry x:Name="Tag" />
+              <Label Text="Preço"/>
+              <Entry x:Name="Preco"/> 
+            </StackLayout> 
+              
+</ContentPage>
